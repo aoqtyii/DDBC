@@ -41,6 +41,7 @@ class geo_distribution:
         flg_x = 0
         flg_y = 0
         XY = np.asarray([[0, 0, 0, 0 * i] for i in range(n)])
+
         for i in range(n):
             if i != 0 and i % sqrt_n == 0:
                 flg_y += 1
