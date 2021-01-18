@@ -26,10 +26,6 @@ class Theil:
         self.Tl_norm_G = np.sum(G / G_norm * np.log(G / G_norm)) / (self.K * np.log(self.K))
         return self.Tl_norm_G
 
-    # def get_Theil_Lambda(self, L, n, average_A):
-    #     self.Tl_norm_L = np.sum(average_A * L * np.log(average_A * L * n / self.K)) / (self.K * np.log(n))
-    #     return self.Tl_norm_L
-
     def get_Theil_Lambda(self, L, n):
         self.Tl_norm_L = np.sum(L * np.log(L * n / self.K)) / (self.K * np.log(n))
         return self.Tl_norm_L
